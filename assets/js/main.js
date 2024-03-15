@@ -5,14 +5,17 @@ createApp({
             newTask: '',
             tasks: [
                 
-            ]
+            ],
+            
+            if:(newTask.length === tasks.length)
+                console.log('le parole sono uguali')
         }
+
     },
     methods: {
         addTask(){
             console.log(this.newTask);
-            this.tasks.push(this.newTask)
+            this.tasks.unshift(this.newTask)
         }
     }
 }).mount('#app')
-
